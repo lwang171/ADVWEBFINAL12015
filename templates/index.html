@@ -64,18 +64,20 @@
             <foreignObject x="23%" y="35%" width="54%" height="30%" class="select-sign">
               <body xmlns="http://www.w3.org/1999/xhtml">
                 <h2>ENTER YOUR DATE OF BIRTH</h2>
-                <form method="GET">
+                <form method="GET" id="dobsubmit">
                   <div class="row">
                     <div class="col-4">
-                      <input type="text" id="month" name="month" class="form-control" placeholder="MM" maxlength="2" autofocus/>
+                      <input type="number" id="month" name="month" class="form-control" placeholder="MM" maxlength="2" autofocus/>
                     </div>
                     <div class="col-4">
-                      <input type="text" id="day" name="day" class="form-control" placeholder="DD" maxlength="2" />
+                      <input type="number" id="day" name="day" class="form-control" placeholder="DD" maxlength="2" />
                     </div>
                     <div class="col-4">
-                      <input type="text" id="year" name="year" class="form-control" placeholder="YYYY" maxlength="4" />
+                      <input type="number" id="year" name="year" class="form-control" placeholder="YYYY" maxlength="4" />
                     </div>
                   </div>
+                  <div id="label-press-enter" style="display:none">Press enter</div>
+                  <div id="label-try-again" style="display:none">Please type in a valid birthdate</div>
                 </form>
               </body>
             </foreignObject>

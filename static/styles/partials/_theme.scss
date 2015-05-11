@@ -4,6 +4,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
 }
 .small-padding {
   padding: 10px 0;
@@ -296,7 +297,7 @@ body {
   border-radius: 25px;
   border: 1px solid #333;
   color: #333;
-  padding: 7px 7px;
+  padding: 5px 7px;
 }
 .btn-outline {
   padding: 10px 25px;
@@ -378,7 +379,7 @@ body {
   &__header {
     color: #333;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 30px;
       padding: 0 1em;
@@ -797,7 +798,7 @@ body {
 }
 .quote {
   position: relative;
-  max-width: 500px;
+  max-width: 60%;
   @include center-in-parent;
   @include respond-to('sm') {
     &:before,
@@ -1219,7 +1220,7 @@ footer .extra-padding{
 }
 
 .container .extra-padding{
-  padding: 8em 0;
+  padding: 5em 0 8em 0;
 }
 
 .container{
@@ -1369,6 +1370,7 @@ footer .extra-padding{
   }
 
   @media screen and (max-width: 500px) {
+     
  
 
     .zodiac__icon{
@@ -1433,6 +1435,9 @@ footer .extra-padding{
   }
 
   @media screen and (max-width:750px) {
+    .quote{
+      max-width: 80%;
+    }
     .sagittarius {
   border-color: $sagittarius;
   color: $sagittarius;
@@ -1832,9 +1837,37 @@ footer .extra-padding{
 }
   }
 
+    @media screen and (max-width: 500px) {
+     .quote{
+      max-width: 85%;
+    }
+  }
+
 
   .last_article{
     padding-bottom:5em;
   }
 
+  a:-webkit-any-link {
+  text-decoration: none;
+}
+
+/* Hide spinner on <input type="number"> */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#label-press-enter {
+  color: white;
+  margin: 1em;
+}
+
+
+#label-try-again {
+  color: #ff8d4d;
+  margin: 1em;
+}
 
